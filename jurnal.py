@@ -64,7 +64,7 @@ qj = df[['Alternatif','Joint(Q)']]
 l = df['Product'] / (df['Sum']*df['Product'])
 
 
-st.write(l)
+st.title(l)
 df['Joint(𝝀)'] = (l*df['Sum']) + ((1-l)*df['Product'])
 ql = df[['Alternatif','Joint(𝝀)']]
 
