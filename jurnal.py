@@ -2,6 +2,8 @@
 import pandas as pd 
 import streamlit as st
 
+st.set_page_config(layout="wide")
+
 alt = { 'Alternatif'    : ["Alternatif-1","alternatif-2","alternatif-3","Alternatif-4","alternatif-5"],
         'K1'            : [3,3,5,5,7],
         'K2'            : [7,9,5,3,9],
