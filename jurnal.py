@@ -29,7 +29,7 @@ max = pd.DataFrame([[max1,max2,max3,max4]],
         columns=['K1','K2','K3','K4'],index=['MAX'])
 min = pd.DataFrame([[min1,min2,min3,min4]],
         columns=['K1','K2','K3','K4'],index=['MIN'])
-st.dataframe(min4)
+st.write(min4)
 minmax= max.append(min)
 
 df['W1'] = df['K1']/max1
