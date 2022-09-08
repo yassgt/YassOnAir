@@ -30,7 +30,7 @@ max = pd.DataFrame([[max1,max2,max3,max4]],
         columns=['K1','K2','K3','K4'],index=['MAX'])
 min = pd.DataFrame([[min1,min2,min3,min4]],
         columns=['K1','K2','K3','K4'],index=['MIN'])
-st.write(min4)
+
 minmax= max.append(min)
 
 df['W1'] = df['K1']/max1
@@ -67,7 +67,7 @@ qj = df[['Alternatif','Joint(Q)']]
 l = df['Product'] / (df['Sum']*df['Product'])
 
 
-st.title(l)
+
 df['Joint(𝝀)'] = (l*df['Sum']) + ((1-l)*df['Product'])
 ql = df[['Alternatif','Joint(𝝀)']]
 st.header("Matriks WSM")
