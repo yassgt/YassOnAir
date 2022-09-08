@@ -64,4 +64,4 @@ df['Joint(Q)'] = (df['Sum'] + df['Product'])/2
 st.dataframe(wsm.style.format(precision=2))
 st.dataframe(wpm.style.format(precision=2))
 
-st.bar_chart(df[['Joint(Q)']], dx='Joint(Q)')
+st.bar_chart(df[['Joint(Q)']], y='Joint(Q)')
