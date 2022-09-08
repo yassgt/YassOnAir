@@ -69,4 +69,4 @@ st.dataframe(wsm.style.format(precision=2))
 st.dataframe(wpm.style.format(precision=2))
 st.dataframe(qj.style.format(precision=3))
 
-st.bar_chart(df[['Joint(𝝀)','Joint(Q)']])
+st.bar_chart(df[['Joint(𝝀)','Joint(Q)']],y='Joint(𝝀)')
