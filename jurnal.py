@@ -64,6 +64,6 @@ qj = df[['Alternatif','Joint(Q)']]
 
 st.dataframe(wsm.style.format(precision=2))
 st.dataframe(wpm.style.format(precision=2))
-st.dataframe(wpm.style.format(precision=2))
+st.dataframe(qj.style.format(precision=2))
 
 st.bar_chart(df[['Joint(Q)']], y='Joint(Q)')
