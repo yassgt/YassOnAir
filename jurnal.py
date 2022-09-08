@@ -62,11 +62,13 @@ wpm = df[['Alternatif','WPM1','WPM2','WPM3','WPM4','Product']]
 df['Joint(Q)'] = (df['Sum'] + df['Product'])/2
 qj = df[['Alternatif','Joint(Q)']]
 l = df['Product'] / (df['Sum']*df['Product'])
+ql = df[['Alternatif','Joint(𝝀)']]
 
 st.write(l)
 df['Joint(𝝀)'] = (l*df['Sum']) + ((1-l)*df['Product'])
 st.dataframe(wsm.style.format(precision=2))
 st.dataframe(wpm.style.format(precision=2))
+st.dataframe(qj.style.format(precision=3))
 st.dataframe(qj.style.format(precision=3))
 
 st.bar_chart(df[['Joint(𝝀)','Joint(Q)']])
