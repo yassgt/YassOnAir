@@ -39,13 +39,13 @@ df['W1'] = df['K1']/max1
 df['W2'] = df['K2']/max2
 df['W3'] = df['K3']/max3
 df['W4'] = df['K4']/min4
-st.header("Min-Max")
+# st.header("Min-Max")
 # st.dataframe(minmax)
 
 n = df[['Alternatif','W1','W2','W3','W4']]
-st.header("Matriks Ternormalisasi")
+# st.header("Matriks Ternormalisasi")
 # st.dataframe(n.style.format(precision=2))
-st.header("Bobot Preferensi")
+# st.header("Bobot Preferensi")
 # st.dataframe(dfb.style.format(precision=2))
 
 df['WSM1'] = df['W1'] * 0.25
@@ -72,9 +72,9 @@ l = df['Product'] / (df['Sum']*df['Product'])
 
 df['Joint(𝝀)'] = (l*df['Sum']) + ((1-l)*df['Product'])
 ql = df[['Alternatif','Joint(𝝀)']]
-st.header("Matriks WSM")
+# st.header("Matriks WSM")
 # st.dataframe(wsm.style.format(precision=2))
-st.header("Matriks WPM")
+# st.header("Matriks WPM")
 # st.dataframe(wpm.style.format(precision=2))
 st.header("Hasil Joint(Q)")
 st.dataframe(qj.style.format(precision=3))
