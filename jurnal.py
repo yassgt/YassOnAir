@@ -90,5 +90,5 @@ with col2:
     st.header("Hasil Joint(𝝀)")
     st.dataframe(ql.style.format(precision=3))
 
-st.bar_chart(df[['Joint(𝝀)','Joint(Q)']])
-col1, col2 = st.columns(2)
+    st.bar_chart(df[['Joint(𝝀)','Joint(Q)']])
+    col1, col2 = st.columns(2)
