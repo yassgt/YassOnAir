@@ -53,7 +53,7 @@ df['WPM1'] = df['W1'] ** 0.25
 df['WPM2'] = df['W2'] ** 0.25
 df['WPM3'] = df['W3'] ** 0.45
 df['WPM4'] = df['W4'] ** 0.05
-df['Product'] = df['WPM1'] + df['WPM2'] + df['WPM3'] + df['WPM4']
+df['Product'] = df['WPM1'] * df['WPM2'] * df['WPM3'] * df['WPM4']
 
 
 wsm = df[['Alternatif','WSM1','WSM2','WSM3','WSM4','Sum']]
