@@ -60,7 +60,7 @@ wsm = df[['Alternatif','WSM1','WSM2','WSM3','WSM4','Sum']]
 wpm = df[['Alternatif','WPM1','WPM2','WPM3','WPM4','Product']]
 
 df['Joint(Q)'] = (df['Sum'] + df['Product'])/2
-qj = df[['Alternatif','Joint(Q)']].sort_values(by='Joint(Q)')
+qj = df[['Alternatif','Joint(Q)']].
 
 st.dataframe(wsm.style.format(precision=2))
 st.dataframe(wpm.style.format(precision=2))
