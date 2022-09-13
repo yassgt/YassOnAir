@@ -39,4 +39,4 @@ for i in page:
         
 df = pd.DataFrame({'Nama Artikel': listDoi, 'Doi': listName, 'Tahun':listYear})
 
-sst.dataframe(df)
+st.dataframe(df)
